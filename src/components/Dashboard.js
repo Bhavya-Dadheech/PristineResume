@@ -45,11 +45,19 @@ export default function Dashboard() {
       </div>
       <div className="flex flex-row gap-3 p-4 text-center">
         <div>
-          <img className="border border-indigo-600 rounded-xl w-60" src={sampleImage} alt="Sample Resume 2" />
+          <img
+            className="border border-indigo-600 rounded-xl w-60 cursor-pointer"
+            src={sampleImage}
+            alt="Sample Resume 2"
+          />
           <span>Classic</span>
         </div>
         <div>
-          <img className="border border-indigo-600 rounded-xl w-60" src={sampleImage2} alt="Sample Resume 1" />
+          <img
+            className="border border-indigo-600 rounded-xl w-60 cursor-pointer"
+            src={sampleImage2}
+            alt="Sample Resume 1"
+          />
           <span>Modern</span>
         </div>
       </div>
