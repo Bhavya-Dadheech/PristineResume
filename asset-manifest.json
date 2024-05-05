@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PristineResume/static/css/main.4c08eb01.css",
-    "main.js": "/PristineResume/static/js/main.e78575ba.js",
+    "main.js": "/PristineResume/static/js/main.403b1a93.js",
     "static/js/253.bc8f1890.chunk.js": "/PristineResume/static/js/253.bc8f1890.chunk.js",
     "static/js/553.4f00fd4a.chunk.js": "/PristineResume/static/js/553.4f00fd4a.chunk.js",
     "static/js/547.4f95390f.chunk.js": "/PristineResume/static/js/547.4f95390f.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/redux.cjs": "/PristineResume/static/media/redux.7edfc461ab353f1712ab.cjs",
     "index.html": "/PristineResume/index.html",
     "main.4c08eb01.css.map": "/PristineResume/static/css/main.4c08eb01.css.map",
-    "main.e78575ba.js.map": "/PristineResume/static/js/main.e78575ba.js.map",
+    "main.403b1a93.js.map": "/PristineResume/static/js/main.403b1a93.js.map",
     "253.bc8f1890.chunk.js.map": "/PristineResume/static/js/253.bc8f1890.chunk.js.map",
     "553.4f00fd4a.chunk.js.map": "/PristineResume/static/js/553.4f00fd4a.chunk.js.map",
     "547.4f95390f.chunk.js.map": "/PristineResume/static/js/547.4f95390f.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.4c08eb01.css",
-    "static/js/main.e78575ba.js"
+    "static/js/main.403b1a93.js"
   ]
 }
