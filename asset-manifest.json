@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PristineResume/static/css/main.4c08eb01.css",
-    "main.js": "/PristineResume/static/js/main.403b1a93.js",
+    "main.js": "/PristineResume/static/js/main.1a5cb53d.js",
     "static/js/253.bc8f1890.chunk.js": "/PristineResume/static/js/253.bc8f1890.chunk.js",
     "static/js/553.4f00fd4a.chunk.js": "/PristineResume/static/js/553.4f00fd4a.chunk.js",
     "static/js/547.4f95390f.chunk.js": "/PristineResume/static/js/547.4f95390f.chunk.js",
@@ -17,10 +17,9 @@
     "static/media/resume-sample2.jpg": "/PristineResume/static/media/resume-sample2.176d42a8820babb1b9eb.jpg",
     "static/media/resume-sample1.jpg": "/PristineResume/static/media/resume-sample1.7558125f9a8da6bf3791.jpg",
     "static/media/logo.png": "/PristineResume/static/media/logo.71db5ad51e7589f474bd.png",
-    "static/media/redux.cjs": "/PristineResume/static/media/redux.7edfc461ab353f1712ab.cjs",
     "index.html": "/PristineResume/index.html",
     "main.4c08eb01.css.map": "/PristineResume/static/css/main.4c08eb01.css.map",
-    "main.403b1a93.js.map": "/PristineResume/static/js/main.403b1a93.js.map",
+    "main.1a5cb53d.js.map": "/PristineResume/static/js/main.1a5cb53d.js.map",
     "253.bc8f1890.chunk.js.map": "/PristineResume/static/js/253.bc8f1890.chunk.js.map",
     "553.4f00fd4a.chunk.js.map": "/PristineResume/static/js/553.4f00fd4a.chunk.js.map",
     "547.4f95390f.chunk.js.map": "/PristineResume/static/js/547.4f95390f.chunk.js.map",
@@ -36,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.4c08eb01.css",
-    "static/js/main.403b1a93.js"
+    "static/js/main.1a5cb53d.js"
   ]
 }
