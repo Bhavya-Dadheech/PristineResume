@@ -4,11 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { setSummary } from "../redux";
+import { useMediaQuery } from "react-responsive";
 
 export default function Summary({ setProgress }) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const initialVal = useSelector((state) => state.summary);
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const validation = Yup.object({
     summary: Yup.string().required("Summary is required")
@@ -16,7 +18,7 @@ export default function Summary({ setProgress }) {
 
   return (
     <>
-      <span className="roboto-bold text-3xl">Almost done! Let’s finish with a strong summary</span>
+      <span className="roboto-bold sm:text-3xl text-2xl">Almost done! Let’s finish with a strong summary</span>
       <Formik
         initialValues={initialVal}
         validationSchema={validation}
@@ -30,7 +32,7 @@ export default function Summary({ setProgress }) {
         <Form>
           <div className="space-y-12">
             <div className="border-b border-gray-900/10 pb-12">
-              <div className="mt-5 grid grid-cols-3 gap-x-6 gap-y-8">
+              <div className="mt-5 grid sm:grid-cols-3 grid-cols-1 gap-x-6 sm:gap-y-8 gap-y-4">
                 <div className="col-span-2">
                   <label htmlFor="summary" className="block text-sm font-medium leading-6 text-gray-900">
                     Summary<span className="mx-1 text-red-600">*</span>
@@ -39,7 +41,7 @@ export default function Summary({ setProgress }) {
                     <Field
                       as="textarea"
                       name="summary"
-                      rows={6}
+                      rows={isMobile ? 12 : 6} // Adjust the number of rows based on screen size
                       className="hover:shadow-md block w-full border-[0.5px] border-indigo-400 rounded bg-slate-50 p-2 text-indigo-600 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 focus:outline-none focus:indigo-600 focus:ring-1 focus:ring-indigo-600"
                     />
                   </div>

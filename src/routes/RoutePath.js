@@ -9,8 +9,8 @@ export default function RoutePath({ setProgress }) {
     <Routes>
       {navigation.map((item) => (
         <Route
-          key={item.name}
-          path={item.to}
+          key={item.title}
+          path={item.path}
           element={
             <React.Suspense fallback={<>...</>}>
               <item.component setProgress={setProgress} />

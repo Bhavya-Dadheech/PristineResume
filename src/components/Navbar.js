@@ -13,7 +13,10 @@ export default function Navbar() {
   }
 
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-blue-500 from-10% via-sky-600 via-30% to-indigo-700 to-80%">
+    <Disclosure
+      as="nav"
+      className="hidden sm:block bg-gradient-to-r from-blue-500 from-10% via-sky-600 via-30% to-indigo-700 to-80%"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
@@ -31,7 +34,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center text-white text-xl font-medium">
+                <div className="flex flex-shrink-0 items-center text-white sm:text-xl text-base font-medium">
                   <img src={logo} alt="logo" className="shadow-md rign-1 w-8 h-8 rounded-full mx-2" />
                   PristineResume
                 </div>
@@ -39,17 +42,17 @@ export default function Navbar() {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link
-                        key={item.name}
-                        to={item.to}
+                        key={item.title}
+                        to={item.path}
                         className={classNames(
-                          item.to === location.pathname
+                          item.path === location.pathname
                             ? "bg-indigo-700 text-white"
                             : "text-gray-100 hover:bg-indigo-600 hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
-                        aria-current={item.to === location.pathname ? "page" : undefined}
+                        aria-current={item.path === location.pathname ? "page" : undefined}
                       >
-                        {item.name}
+                        {item.title}
                       </Link>
                     ))}
                   </div>
@@ -123,18 +126,18 @@ export default function Navbar() {
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
-                  key={item.name}
+                  key={item.title}
                   as="a"
-                  to={item.to}
+                  to={item.path}
                   className={classNames(
-                    item.to === location.pathname
+                    item.path === location.pathname
                       ? "bg-gray-900 text-white"
                       : "text-gray-100 hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.to === location.pathname ? "page" : undefined}
+                  aria-current={item.path === location.pathname ? "page" : undefined}
                 >
-                  {item.name}
+                  {item.title}
                 </Disclosure.Button>
               ))}
             </div>

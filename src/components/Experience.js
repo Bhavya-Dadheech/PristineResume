@@ -22,7 +22,7 @@ export default function Experience({ setProgress }) {
 
   return (
     <>
-      <span className="roboto-bold text-3xl">Let’s work on your experience</span>
+      <span className="roboto-bold sm:text-3xl text-2xl">Let’s work on your experience</span>
       <Formik
         initialValues={initialVal}
         validationSchema={validation}
@@ -38,7 +38,7 @@ export default function Experience({ setProgress }) {
             <div className="border-b border-gray-900/10 pb-12">
               <h2 className="text-base font-semibold leading-7 text-gray-900">Work Experience</h2>
               <p className="mt-1 text-sm leading-6 text-gray-600">Start with your most recent job first.</p>
-              <div className="mt-5 grid grid-cols-3 gap-x-6 gap-y-8">
+              <div className="mt-5 grid sm:grid-cols-3 grid-cols-1 gap-x-6 sm:gap-y-8 gap-y-4">
                 <div className="col-span-1">
                   <label htmlFor="job_title" className="block text-sm font-medium leading-6 text-gray-900">
                     Job Title<span className="mx-1 text-red-600">*</span>

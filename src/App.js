@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import LoadingBar from "react-top-loading-bar";
+import Sidebar from "./components/sidenav/Sidebar";
 
 export default function App() {
   const location = useLocation();
@@ -24,8 +25,9 @@ export default function App() {
     <Provider store={store}>
       <>
         <LoadingBar color="#FFA500" progress={progress} onLoaderFinished={() => setprogress(0)} />
-        <Navbar />
-        <div className={`${location.pathname === "/" ? "p-12 m-12" : "p-12 mx-12"}`}>
+        <Navbar className="" />
+        <Sidebar />
+        <div className={`${location.pathname === "/" ? "sm:p-12 sm:m-12 p-6 m-3" : "sm:p-12 sm:mx-12 p-6 mx-2"}`}>
           <RoutePath setProgress={setProgress} />
         </div>
       </>

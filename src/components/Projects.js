@@ -20,7 +20,7 @@ export default function Projects({ setProgress }) {
 
   return (
     <>
-      <span className="roboto-bold text-3xl">Add you projects/work that you have done so far.</span>
+      <span className="roboto-bold sm:text-3xl text-2xl">Add you projects/work that you have done so far.</span>
       <Formik
         initialValues={initialVal}
         validationSchema={validation}
@@ -35,7 +35,7 @@ export default function Projects({ setProgress }) {
           <div className="space-y-12">
             <div className="border-b border-gray-900/10 pb-12">
               <h2 className="text-base font-semibold leading-7 text-gray-900">Projects</h2>
-              <div className="mt-5 grid grid-cols-3 gap-x-6 gap-y-8">
+              <div className="mt-5 grid sm:grid-cols-3 grid-cols-1 gap-x-6 sm:gap-y-8 gap-y-4">
                 <div className="col-span-1">
                   <label htmlFor="project_title" className="block text-sm font-medium leading-6 text-gray-900">
                     Title<span className="mx-1 text-red-600">*</span>

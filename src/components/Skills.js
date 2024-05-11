@@ -63,7 +63,7 @@ export default function Skills({ setProgress }) {
 
   return (
     <>
-      <span className="roboto-bold text-3xl">Let’s note down your top skills.</span>
+      <span className="roboto-bold sm:text-3xl text-2xl">Let’s note down your top skills.</span>
       <Formik
         initialValues={initialVal}
         onSubmit={() => {
@@ -84,7 +84,7 @@ export default function Skills({ setProgress }) {
               <p className="mt-1 text-sm leading-6 text-gray-600">
                 Add languages, frameworks, or tools that you are good with.
               </p>
-              <div className="mt-5 grid grid-cols-3 gap-x-6 gap-y-8">
+              <div className="mt-5 grid sm:grid-cols-3 grid-cols-1 gap-x-6 gap-y-8">
                 <div className="col-span-1">
                   <label htmlFor="skills" className="block text-sm font-medium leading-6 text-gray-900">
                     Skill
@@ -117,7 +117,7 @@ export default function Skills({ setProgress }) {
                     <span className="text-xs text-red-500">Skills are required / Add at least 5 skills</span>
                   )}
                 </div>
-                <div className="col-span-2">
+                <div className="sm:col-span-2 col-span-1">
                   <label className="block text-sm font-medium leading-6 text-gray-900">Selected skills</label>
                   <div className="flex flex-row flex-wrap p-1 mt-2 hover:shadow-md block w-full border-[0.5px] border-indigo-400 rounded bg-slate-50 min-h-10 text-indigo-600 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6">
                     {skillsArr.map((item, index) => (

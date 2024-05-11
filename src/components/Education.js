@@ -22,7 +22,7 @@ export default function Education({ setProgress }) {
 
   return (
     <>
-      <span className="roboto-bold text-3xl">Fill us in about your qualification's</span>
+      <span className="roboto-bold sm:text-3xl text-2xl">Fill us in about your qualification's</span>
       <Formik
         initialValues={initialVal}
         validationSchema={validation}
@@ -41,7 +41,7 @@ export default function Education({ setProgress }) {
                 <p className="mt-1 text-sm leading-6 text-gray-600">
                   Tell us about any colleges, primary eduaction , or any other program you have attend.
                 </p>
-                <div className="mt-5 grid grid-cols-3 gap-x-6 gap-y-8">
+                <div className="mt-5 grid sm:grid-cols-3 grid-cols-1 gap-x-6 sm:gap-y-8 gap-y-4">
                   <div className="col-span-1">
                     <label htmlFor="institute_name" className="block text-sm font-medium leading-6 text-gray-900">
                       Institue Name<span className="mx-1 text-red-600">*</span>
