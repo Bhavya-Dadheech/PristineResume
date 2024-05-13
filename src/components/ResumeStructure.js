@@ -59,11 +59,11 @@ export default function ResumeStructure() {
 
             {/* skills */}
             <div className="flex flex-col gap-1">
-              <div className="text-lg border-b-2 border-slate-900 roboto-bold">TECHNICAL SKILLS:</div>
-              <div className="grid grid-cols-3 gap-5 px-8 py-2">
+              <div className="text-lg border-b-2 border-slate-900 roboto-bold">AREA OF EXPERTISE:</div>
+              <div className="grid grid-cols-3 gap-1 px-8 py-2">
                 {skillsState.skills.map((item) => (
                   <div key={item} className="flex flex-row gap-5 items-center col-span-1 text-gray-600">
-                    <span className="text-[7px] bg-gray-600 rounded-full w-2.5">&nbsp;</span>
+                    <span className="bg-gray-600 rounded-full w-2 h-2">&nbsp;</span>
                     <span className="text-sm text-gray-600"> {item}</span>
                   </div>
                 ))}
@@ -154,12 +154,12 @@ export default function ResumeStructure() {
             </div>
             {/* skills */}
             <div className="flex flex-col gap-1">
-              <div className="text-[0.45rem] border-b-2 border-slate-900 roboto-bold">TECHNICAL SKILLS:</div>
-              <div className="grid grid-cols-3 gap-2 px-4 py-1">
+              <div className="text-[0.45rem] border-b-2 border-slate-900 roboto-bold">AREA OF EXPERTISE:</div>
+              <div className="grid grid-cols-3 gap-0.5 px-4 py-1">
                 {skillsState.skills.map((item) => (
                   <div key={item} className="flex flex-row gap-2 items-center col-span-1 text-gray-600">
-                    <span className="text-[0.18rem] bg-gray-600 rounded-full w-[0.25rem]">&nbsp;</span>
-                    <span className="text-[0.35rem]"> {item}</span>
+                    <span className="bg-gray-600 rounded-full w-[0.22rem] h-[0.22rem]">&nbsp;</span>
+                    <span className="text-[0.30rem]"> {item}</span>
                   </div>
                 ))}
               </div>
