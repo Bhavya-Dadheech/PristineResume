@@ -72,7 +72,7 @@ export default function ResumeStructure() {
 
             {/* experience */}
             <div className="flex flex-col gap-1">
-              <div className="text-lg border-b-2 border-slate-900 roboto-bold">EXPERIENCE:</div>
+              <div className="text-lg border-b-2 border-slate-900 roboto-bold">PROFESSIONAL EXPERIENCE:</div>
               <div className="flex flex-col">
                 <div className="roboto-bold">
                   <span>{experienceState.job_title}</span>&nbsp;–&nbsp;<span>{experienceState.employer}</span>
@@ -166,7 +166,7 @@ export default function ResumeStructure() {
             </div>
             {/* experience */}
             <div className="flex flex-col gap-1">
-              <div className="text-[0.45rem] border-b-2 border-slate-900 roboto-bold">EXPERIENCE:</div>
+              <div className="text-[0.45rem] border-b-2 border-slate-900 roboto-bold">PROFESSIONAL EXPERIENCE:</div>
               <div className="flex flex-col">
                 <div className="text-[0.4rem] roboto-bold">
                   <span>{experienceState.job_title}</span>&nbsp;–&nbsp;<span>{experienceState.employer}</span>
